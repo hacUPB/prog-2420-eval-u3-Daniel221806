@@ -1,4 +1,3 @@
-
 def main():
 
     from os import system
@@ -9,7 +8,7 @@ def main():
         print("Excelente! Conozcamos cuántos pasajeros podemos transportar. Contamos con los siguientes modelos:")
         for modelo in modelos:
             print(modelo)
-        opcion = input("Escriba el nombre del modelo que desea consultar. Si desea conocer la cantidad total de pasajeros que se pueden transportar, escriba \"Total\": ")
+        opcion = input("Escriba el nombre del modelo que desea consultar tal como lo escribió al inicio del programa. Si desea conocer la cantidad total de pasajeros que se pueden transportar, escriba \"Total\": ")
         system("cls")
         if opcion in modelos:
             # Calcular capacidad para un modelo específico
@@ -18,7 +17,7 @@ def main():
                 if flota[avion] == opcion:
                     pasajeros_totales += modelos[opcion]["Pasajeros"]
             print(f"Para este modelo podemos transportar en total {pasajeros_totales} pasajeros.")
-        elif opcion == "Total":
+        elif opcion == "Total" or opcion == "total":
             # Calcular capacidad total de la flota
             pasajeros_totales = 0
             for modelo in modelos:
@@ -34,7 +33,7 @@ def main():
         print("Excelente! Conozcamos cuánto es el combustible mínimo con el que podemos volar. Contamos con los siguientes modelos:")
         for modelo in modelos:
             print(modelo)
-        opcion = input("Escriba el nombre del modelo que desea consultar. Si desea conocer la cantidad mínima de combustible con el que puede volar toda la flota, escriba \"Total\": ")
+        opcion = input("Escriba el nombre del modelo que desea consultar tal como lo escribió al inicio del programa. Si desea conocer la cantidad mínima de combustible con el que puede volar toda la flota, escriba \"Total\": ")
         system("cls")
         if opcion in modelos:
             # Calcular combustible para un modelo específico
@@ -43,7 +42,7 @@ def main():
                 if flota[avion] == opcion:
                     combustible_total += modelos[opcion]["Combustible"]
             print(f"Para volar todos nuestros aviones de este modelo necesitamos mínimo {combustible_total} galones de combustible.")
-        elif opcion == "Total":
+        elif opcion == "Total" or opcion == "total":
             # Calcular combustible total para toda la flota
             combustible_total = 0
             for modelo in modelos:
@@ -59,7 +58,7 @@ def main():
         print("Excelente! Conozcamos cuánto es la carga paga máxima que podemos transportar. Contamos con los siguientes modelos:")
         for modelo in modelos:
             print(modelo)
-        opcion = input("Escriba el nombre del modelo que desea consultar. Si desea conocer la cantidad de carga paga máxima que puede transportar toda la flota, escriba \"Total\": ")
+        opcion = input("Escriba el nombre del modelo que desea consultar tal como lo escribió al inicio del programa. Si desea conocer la cantidad de carga paga máxima que puede transportar toda la flota, escriba \"Total\": ")
         system("cls")
         if opcion in modelos:
             # Calcular carga para un modelo específico
@@ -68,7 +67,7 @@ def main():
                 if flota[avion] == opcion:
                     carga_total += modelos[opcion]["Carga"]
             print(f"Con este modelo podemos transportar máximo {carga_total} toneladas de carga paga.")
-        elif opcion == "Total":
+        elif opcion == "Total" or opcion == "total":
             # Calcular carga total para toda la flota
             carga_total = 0
             for modelo in modelos:
@@ -84,7 +83,7 @@ def main():
         print("Excelente! Conozcamos cuánto es la ganancia promedio que podemos generar. Contamos con los siguientes modelos:")
         for modelo in modelos:
             print(modelo)
-        opcion = input("Escriba el nombre del modelo que desea consultar. Si desea conocer el promedio de ganancias que genera toda la flota, escriba \"Total\": ")
+        opcion = input("Escriba el nombre del modelo que desea consultar tal como lo escribió al inicio del programa. Si desea conocer el promedio de ganancias que genera toda la flota, escriba \"Total\": ")
         system("cls")
         if opcion in modelos:
             # Calcular ganancia para un modelo específico
@@ -95,7 +94,7 @@ def main():
                 if flota[avion] == opcion:
                     ganancia_total += modelos[opcion]["Pasajeros"] * valor_billete
             print(f"Con este modelo podemos ganar en promedio {ganancia_total}")
-        elif opcion == "Total":
+        elif opcion == "Total" or opcion == "total":
             # Calcular ganancia total para toda la flota
             ganancia_total = 0
             for modelo in modelos:
